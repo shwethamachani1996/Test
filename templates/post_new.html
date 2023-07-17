@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<link href="/docs/5.0/assets/css/docs.css" rel="stylesheet">
+<div class="container-fluid">
+<h1>New post</h1>
+<form action="" method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Save" />
+</form>
+</div>
+{% endblock content %}
